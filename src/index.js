@@ -9,6 +9,9 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import routes from "../config/router.config.js";
+// import '@babel/polyfill';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import "./index.less";
 
 ReactDOM.render(

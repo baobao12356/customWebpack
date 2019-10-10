@@ -5,7 +5,7 @@
       {
         // 将es6的语法翻译成es5语法
         "targets": { "ie": 10 },
-        "useBuiltIns": "usage", // 做@babel/polyfill补充时，按需补充，用到什么才补充什么,
+        "useBuiltIns": "entry", // 做@babel/polyfill补充时，按需补充，用到什么才补充什么,
         "corejs": "3"
       }
     ],
