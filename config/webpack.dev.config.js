@@ -18,8 +18,6 @@ function resolve(u) {
   return path.resolve(__dirname, u);
 }
 
-console.log("resolve===========:", resolve("../node_modules/react-loadable"));
-
 const initConfig = {
   // 模式，表示dev环境
   mode: "development",
@@ -105,17 +103,9 @@ const initConfig = {
       cacheGroups: {
         default: false,
         vendors: false,
-        loadable: {
-          chunks: "all",
-          minSize: 0,
-          maxSize: 1500000,
-          test: /react\-loadable/,
-          name: "loadable",
-          priority: 90
-        },
         base: {
           chunks: "all",
-          minSize: 500000,
+          minSize: 0,
           maxSize: 3000000,
           test: /node_modules/,
           name: "base",
