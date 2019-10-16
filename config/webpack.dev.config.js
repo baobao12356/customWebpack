@@ -45,7 +45,7 @@ const initConfig = {
         include: [
           resolve("../src"),
           resolve("./router.config.js"),
-          resolve("../node_modules/react-loadable")
+          resolve("../node_modules/react-loadable/lib")
         ],
         use: ["babel-loader"]
       },
