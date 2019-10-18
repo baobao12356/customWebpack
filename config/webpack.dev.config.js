@@ -45,7 +45,9 @@ const initConfig = {
         include: [
           resolve("../src"),
           resolve("./router.config.js"),
-          resolve("../node_modules/react-loadable/lib")
+          resolve("../node_modules/react-loadable/lib"),
+          resolve("../node_modules/scheduler"),
+          resolve("../node_modules/react"),
         ],
         use: ["babel-loader"]
       },
@@ -154,10 +156,11 @@ const initConfig = {
     hot: true,
     //当使用 HTML5 History API时任意的 404 响应都被替代为index.html
     historyApiFallback: true,
-    // 默认为true,用来监视页面的改动而自动刷新页面,当为false时，网页自动刷新的模式是iframe，也就是将模板页放在一个frame中
+    // 默认为true,用来监视页面的改动而自动刷新页面,
+    //当为false时，网页自动刷新的模式是iframe，也就是将模板页放在一个frame中
     inline: true,
     // 自动打开浏览器
-    // open: true,
+    open: true,
     //关闭错误提示，启用FriendlyErrorsWebpackPlugin
     quiet: true
   }
