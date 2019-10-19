@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config config/webpack.dev.config.js --progress",
     "build": "webpack --config config/webpack.prod.config.js"
   },
-  "author": "HuTao",
+  "author": "深客",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -36,7 +36,8 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",

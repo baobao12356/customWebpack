@@ -1,6 +1,6 @@
 /*
- * @Description: Description
- * @Author: HuTao
+ * @Description: umi-request发起网络请求
+ * @Author: 深客
  * @Date: 2019-10-08 21:43:17
  * @LastEditTime: 2019-10-08 21:43:17
  */
